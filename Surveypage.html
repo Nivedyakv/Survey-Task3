@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Meta tag for character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag for responsive design -->
+    <meta name="description" content="This is a student survey page "> <!-- Meta tag for page description -->
+    <title> Student Survey </title>
+    <style>
+        /* using id and class */
+        #survey {
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: #eae9e9;
+            border: 1px solid #252424;
+        }
+
+        .two {
+            font-family: cursive;
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <marquee direction="right" scrollamount="10px" behavior="alternate" height="80px">
+      <h1>Student Survey form</h1>
+    </marquee>
+    <center> <form id="survey"> <!--using id-->
+        <div class="three">
+
+        <div class="two"> <!--using class-->
+
+            <!-- using text type -->
+            <label>Enter your Name</label>
+            <input type="text" required placeholder="Name">
+            <label>Age</label>
+            <input type="number" placeholder="eg:18">
+
+            <!-- Radio button -->
+            <p>1.Are you interested in programming?</p>
+            <label><input type="radio" name="pro" value="yes"> Yes</label>
+            <label><input type="radio" name="pro" value="no"> No</label>
+
+            <!-- Checkbox -->
+            <p>2. Which programming languages you like?</p>
+            <label><input type="checkbox" name="lang" value="Go lang"> Go lang</label>
+            <label><input type="checkbox" name="lang" value="javascript"> JavaScript</label>
+            <label><input type="checkbox" name="lang" value="python"> Python</label>
+            <label><input type="checkbox" name="lang" value="java"> Java</label>
+            <label><input type="checkbox" name="lang" value="C"> C</label>
+
+            <!-- Text area -->
+
+            <p>3. Write about your favorite programming language?</p>
+            <textarea id="reason" rows="4"></textarea>
+
+            <!-- Email  -->
+
+            <p>4. Enter your email address:</p>
+            <input type="email" name="email" id="email" placeholder="Your email">
+            <!-- Phone number -->
+
+            <p>5. Enter your phone number:</p>
+            <input type="tel" name="phone" id="phone" placeholder="Your phone number">
+
+            <!-- File upload -->
+
+            <p>6. Upload resume</p>
+            <input type="file" name="resume" id="resume">
+        </div>
+
+        <!-- Submit button -->
+
+        <button type="submit" class="submit-button">Submit</button>
+   
+    </form></center> 
+</body>
+
+</html>
